@@ -77,7 +77,7 @@ int main()
     ifstream inputFile("triangle.txt");
     if (!inputFile)
     {
-        cout << "Îøèáêà îòêðûòèÿ ôàéëà!" << endl;
+        cout << "Ð¤Ð°Ð¹Ð» Ð½Ðµ Ð½Ð°Ð¹Ð´ÐµÐ½." << endl;
         return 1;
     }
 
@@ -101,8 +101,8 @@ int main()
     int maxSum = findMaxPath(triangle);
     vector<int> optimalPath = findOptimalPath(triangle);
 
-    cout << "Ìàêñèìàëüíîå ñóììàðíîå çíà÷åíèå íàãðóçîê: " << maxSum << endl;
-    cout << "Îïòèìàëüíûé ïóòü: " << " ";
+    cout << "ÐœÐ°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ ÑÑƒÐ¼Ð¼Ð°Ñ€Ð½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð½Ð°Ð³Ñ€ÑƒÐ·Ð¾Ðº: " << maxSum << endl;
+    cout << "ÐžÐ¿Ñ‚Ð¸Ð¼Ð°Ð»ÑŒÐ½Ñ‹Ð¹ Ð¿ÑƒÑ‚ÑŒ: " << " ";
     for (int i = 0; i < optimalPath.size(); i++)
     {
         cout << optimalPath[i] << " ";
