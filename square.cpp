@@ -16,7 +16,7 @@ int main()
     {
         for (int j = 0; j < n; j++) 
         {
-            matrix[i][j] = rand() % 10 + 1; // Генерация случайных значений от 1 до 10
+            matrix[i][j] = rand() % 10 + 1; 
         }
     }
     cout << "Матрица нагрузок:" << endl;
@@ -33,21 +33,18 @@ int main()
 
     gg[0][0] = matrix[0][0];
 
-    // Заполняем первую строку
     for (int j = 1; j < n; j++)
     {
         gg[0][j] = gg[0][j - 1] + matrix[0][j];
         path[0][j] = 'L';
     }
 
-    // Заполняем первый столбец
     for (int i = 1; i < n; i++) 
     {
         gg[i][0] = gg[i - 1][0] + matrix[i][0];
         path[i][0] = 'U';
     }
 
-    // Заполняем остальные ячейки
     for (int i = 1; i < n; i++)
     {
         for (int j = 1; j < n; j++)
