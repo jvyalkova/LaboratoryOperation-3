@@ -54,14 +54,14 @@ int main()
 {
     setlocale(LC_ALL, "RUS");
     string s1, s2;
-    cout << "Ïåðâàÿ öåïî÷êà ñèìâîëîâ: ";
+    cout << "ÐŸÐµÑ€Ð²Ð°Ñ Ñ†ÐµÐ¿Ð¾Ñ‡ÐºÐ° ÑÐ¸Ð¼Ð²Ð¾Ð»Ð¾Ð²: ";
     cin >> s1;
-    cout << "Âòîðàÿ öåïî÷êà ñèìâîëîâ: ";
+    cout << "Ð’Ñ‚Ð¾Ñ€Ð°Ñ Ñ†ÐµÐ¿Ð¾Ñ‡ÐºÐ° ÑÐ¸Ð¼Ð²Ð¾Ð»Ð¾Ð²: ";
     cin >> s2;
 
     string maxCommonSubsequence = findMaxCommonSubsequence(s1, s2);
 
-    cout << "Ìàêñèìàëüíî ñîâïàäàþùàÿ îáùàÿ ïîäöåïî÷êà: " << maxCommonSubsequence << endl;
+    cout << "ÐœÐ°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð¾ ÑÐ¾Ð²Ð¿Ð°Ð´Ð°ÑŽÑ‰Ð°Ñ Ð¾Ð±Ñ‰Ð°Ñ Ð¿Ð¾Ð´Ñ†ÐµÐ¿Ð¾Ñ‡ÐºÐ°: " << maxCommonSubsequence << endl;
 
     return 0;
 }
