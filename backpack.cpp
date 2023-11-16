@@ -15,7 +15,7 @@ int main()
     ifstream inputFile("backpack.txt");
     if (!inputFile)
     {
-        cout << "Îøèáêà ÷òåíèÿ ôàéëà." << endl;
+        cout << "Файл не найден." << endl;
         return 0;
     }
 
