@@ -33,12 +33,12 @@ int main()
     setlocale(LC_ALL, "RUS");
     int N;
 
-    cout << "Ââåäèòå ñòåïåíü ÷èñëà: ";
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÑ‚ÐµÐ¿ÐµÐ½ÑŒ Ñ‡Ð¸ÑÐ»Ð°: ";
     cin >> N;
 
     Solve(N);
 
-    cout << "Îïòèìàëüíîå êîëè÷åñòâî îïåðàöèé: " << Op[N] << endl;
+    cout << "ÐžÐ¿Ñ‚Ð¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ð¾Ð¿ÐµÑ€Ð°Ñ†Ð¸Ð¹: " << Op[N] << endl;
 
     vector<int> sequence;
     int i = N;
@@ -63,7 +63,7 @@ int main()
 
     reverse(sequence.begin(), sequence.end());
 
-    cout << "Ïîñëåäîâàòåëüíîñòü îïåðàöèé: ";
+    cout << "ÐŸÐ¾ÑÐ»ÐµÐ´Ð¾Ð²Ð°Ñ‚ÐµÐ»ÑŒÐ½Ð¾ÑÑ‚ÑŒ Ð¾Ð¿ÐµÑ€Ð°Ñ†Ð¸Ð¹: ";
     for (int num : sequence)
     {
         cout << num << " ";
